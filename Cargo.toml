@@ -8,7 +8,15 @@ name = "tensor-ops-bench"
 path = "benches/tensor_ops.rs"
 harness = false
 
+[[bench]]
+name = "blas"
+path = "benches/blas_bench.rs"
+harness = false
+
 [dependencies]
+blas-src = "0.10.0"
+ndarray = "0.15.6"
+rayon = "1.8.1"
 
 [dev-dependencies]
 criterion = "0.4"
